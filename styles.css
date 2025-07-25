@@ -12,6 +12,7 @@ body{
     background-color: rgba(137, 135, 161, 0.15);
 }
 
+/* PC Screen---(Nav Bar)*/
 .nav{
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@ body{
 }
 
 .link{
-    font-size: 18px;
+    font-size: 21px;
     text-decoration: none;
     margin-left: 60px;
     color: #8987A1;
@@ -55,6 +56,7 @@ span{
 }
 /* ----- */
 
+/* PC Screen---(Banner)*/
 .banner{
     margin-top: 80px;
     margin-left: 150px;
@@ -127,6 +129,7 @@ span{
 }
 /* ----- */
 
+/* PC Screen---(Plant Section)*/
 .plant{
     margin: 80px 70px 150px 70px;
 }
@@ -147,8 +150,9 @@ span{
     color: rgba(0, 0, 0, 0.5);
     width: 30%;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .plant-box{
@@ -240,43 +244,121 @@ span{
 }
 /* ----- */
 
+/* PC Screen---(Plant Lover)*/
 .plant-lover{
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 150px;
+    gap: 50px;
+    height: 600px;
     margin-left: 150px;
     margin-right: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.badge{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: -110px;
+    right: 810px; 
+}
+
+.badge img{
+    height: 100%;
+    width: 100%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .plant-lover-img{
-    border: 1px solid blue;
+    height: 600px;
 }
 
 .plant-lover-img img{
-   height: 100%;
+   height: 600px;
+   width: 90%;
 }
 
 .flower-lover-detail{
-    border: 1px solid red;
+    height: 600px;
+    position: relative;
+}
+
+.li{
+    padding-left: 35px;
 }
 
 .flower-lover-heading{
     color: #000000;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
     margin-top: 40px;
 }
 
 .point{
-    border: 1px solid green;
-    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.6);
     margin-top: 25px;
-    width: 50%;
 }
+
+/* Mobile Screen---(Plant Lover)*/
+@media screen and (max-width: 576px) {
+    .plant-lover{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 800px;
+        margin: 0px 25px;
+    }
+
+    .plant-lover-img{
+        height: 420px;
+    }
+
+    .plant-lover-img img{ 
+        height: 100%;
+        width: 100%;
+    }
+
+    .badge{
+        display: none;
+    }
+
+    .flower-lover-detail{
+        height: 320px;
+    }
+
+    .li{
+        padding-left: 20px;
+    }
+
+    .flower-lover-heading{
+        color: #000000;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .point{
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 15px;
+    }
+}
+
 /* ----- */
 
+/* PC Screen---(Latest Deals)*/
 .latest-deals{
     margin: 0px 150px 0px 150px;
     height: 650px;
@@ -302,7 +384,7 @@ span{
     font-size: 16px;
     font-weight: 500;
     width: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 .deals-img-box{
@@ -313,7 +395,7 @@ span{
 
 .two-pic{
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 
 .one-pic{
@@ -322,7 +404,7 @@ span{
     background-size: cover;
     background-position: center;
     width: calc((100% - 20px));
-    height: 500px;
+    height: 550px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -446,6 +528,7 @@ span{
 }
 /* ----- */
 
+/* PC Screen---(Join Section)*/
 .join{
     margin: 120px 0px 30px 0px;
 }
@@ -538,10 +621,7 @@ span{
 }
 /* ----- */
 
-.display{
-    display: none;
-}
-
+/* PC Screen---(Footer Section)*/
 footer{
     margin: 0px 150px 50px 150px;
     display: grid;
@@ -570,10 +650,17 @@ footer a{
     place-items: center;
 }
 
+.twitter{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .social-link{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 /* Mobile Screen---(Footer Section)*/
