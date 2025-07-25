@@ -103,13 +103,13 @@ span{
 
     .heading{
         font-weight: bold;
-        font-size: 37px;
+        font-size: 50px;
     }
 
     .ff{
         color: #E95A08;
         font-weight: bold;
-        font-size: 37px;
+        font-size: 50px;
     }
 
     .subtitle{
@@ -381,7 +381,7 @@ span{
 .deals-subtitle{
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     width: 50%;
     margin-bottom: 35px;
@@ -498,6 +498,7 @@ span{
         color: #FFFFFF;
         font-weight: bold;
         font-size: 18px;
+        margin-top: 18px;
         margin-bottom: 50px;
     }
 
@@ -508,7 +509,7 @@ span{
         background-size: cover;
         height: calc((100% - 20px) / 2);
         border-radius: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         color: #FFFFFF;
         font-size: 22px;
         font-weight: bold;
@@ -548,6 +549,7 @@ span{
 }
 
 .input input[type="email"]{
+    font-size: 18px;
     width: 50%;
     height: 60px;
     padding: 15px;
@@ -594,9 +596,10 @@ span{
     }
 
     .input input[type="email"]{
+        font-size: 15px;
         width: 65%;
         height: 50px;
-        padding: 5px;
+        padding: 15px;
         border: none;
     }
 
@@ -668,7 +671,7 @@ footer a{
     footer{
         display: grid;
         grid-template-columns: 1fr;
-        margin: 0px 15px;
+        margin: 0px 15px 25px 15px;
     }
 
     footer .about a{
@@ -678,6 +681,7 @@ footer a{
     }
 
     .logo-subtitle{
+        width: 70%;
         color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
     }
